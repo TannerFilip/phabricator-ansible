@@ -1,0 +1,9 @@
+---
+- name: Phabricator Update 
+  hosts: all
+  user: root
+  sudo: True
+
+  roles:
+    - common
+    - phabricator
