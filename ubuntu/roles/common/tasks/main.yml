@@ -1,7 +1,7 @@
 ---
 - name: Ensure unattended-upgrade is installed, and update apt cache
-  apt: pkg=unattended-upgrade update_cache=yes
+  apt: pkg=unattended-upgrades update_cache=yes
 
 - name: Install security updates
-command: unattended-upgrade 
+  command: unattended-upgrade
 
