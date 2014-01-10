@@ -1,24 +1,19 @@
 # phabricator-ansible
 
-Ansible playbooks for Phabricator installations with Vagrant (optional).
+Ansible playbooks for Phabricator updates on Ubuntu
 
-**Before running this playbook on a production server, make sure that non of this configuration
-break things or conflicts with your server**
 
-## RHEL6
+## Ubuntu
 
 #### Installing
 
-There is a Vagrantfile in the root of this repository in case you want to set it up
-quick, just do `vagrant up` and you will have an instance up and running on http://phabricator.local
+Update the paths in:
+*ubuntu/hosts
 
-Add an entry to your host machine `/etc/hosts` file to this domain and that's it.
+*ubuntu/phabricator/tasks/main.yml
 
-If you used vagrant before you should know the consequences of running a vagrant box in production.
-
-In case you want to run just the ansible playbooks on a server:
-
-`ansible-playbook -i rhel6/hosts rhel6/site.yml`
+Then run
+`ansible-playbook -i ubuntu/hosts ubuntu/site.yml`
 
 
 # LICENSE
