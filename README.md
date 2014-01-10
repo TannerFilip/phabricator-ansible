@@ -7,10 +7,7 @@ Ansible playbooks for Phabricator updates on Ubuntu
 
 #### Installing
 
-Update the paths in:
-*ubuntu/hosts
-
-*ubuntu/phabricator/tasks/main.yml
+Update the paths in ubuntu/hosts and ubuntu/phabricator/tasks/main.yml
 
 Then run
 `ansible-playbook -i ubuntu/hosts ubuntu/site.yml`
